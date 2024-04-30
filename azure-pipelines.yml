@@ -23,7 +23,7 @@ steps:
     goals: 'clean install sonar:sonar'
     publishJUnitResults: false
     javaHomeOption: 'Path'
-    jdkDirectory: '/usr/bin/java'
+    jdkDirectory: '/usr/lib/jvm/java-11-openjdk-amd64'
     mavenVersionOption: 'Default'
     mavenOptions: '-Xmx3072m'
     mavenAuthenticateFeed: false
