@@ -6,10 +6,13 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: kali-agent
 
 steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'My-Sonar-Server'
+    scannerMode: 'Other'
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'My-Sonar-Server'
